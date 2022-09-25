@@ -2,7 +2,10 @@ import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class AppService {
-  getHello(): string {
-    return 'Hello World!';
+  async getMain() {
+    const data = {
+      message: 'currency-converter-api',
+    };
+    return data;
   }
 }
