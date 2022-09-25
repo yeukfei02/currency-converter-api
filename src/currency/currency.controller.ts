@@ -23,8 +23,12 @@ export class CurrencyController {
     @Query('symbols') symbols?: string,
   ) {
     const baseStr = base ? base : 'USD';
+    const symbolsStr = symbols ? symbols.toUpperCase() : '';
 
-    const data = await this.currencyService.getCurrencyRates(baseStr, symbols);
+    const data = await this.currencyService.getCurrencyRates(
+      baseStr,
+      symbolsStr,
+    );
     console.log('data = ', data);
 
     const response = {
@@ -40,12 +44,12 @@ export class CurrencyController {
     @Query('to') to: string,
     @Query('amount') amount: string,
   ) {
-    const amountInt = amount ? parseInt(amount, 10) : 0;
+    const amountNumber = amount ? parseFloat(amount) : 0;
 
     const data = await this.currencyService.getCurrencyConvert(
       from,
       to,
-      amountInt,
+      amountNumber,
     );
     console.log('data = ', data);
 

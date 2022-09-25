@@ -16,7 +16,7 @@ provider:
     lambda: true
   environment:
     NODE_ENV: production
-    # API_KEY: ${param:API_KEY}
+    API_KEY: ${param:API_KEY}
   apiGateway:
     shouldStartNameWithService: true
     description: currency converter api prod
