@@ -1,0 +1,40 @@
+org: yeukfei05
+app: currency-converter-api
+service: currency-converter-api
+
+frameworkVersion: '3'
+useDotenv: true
+
+provider:
+  name: aws
+  runtime: nodejs16.x
+  stage: prod
+  region: ap-southeast-1
+  apiName: currency-converter-api-prod
+  tracing:
+    apiGateway: true
+    lambda: true
+  environment:
+    NODE_ENV: production
+    # API_KEY: ${param:API_KEY}
+  apiGateway:
+    shouldStartNameWithService: true
+    description: currency converter api prod
+  architecture: arm64
+  timeout: 30
+
+functions:
+  main:
+    handler: dist/main.handler
+    events:
+      - http:
+          method: ANY
+          path: /
+          cors: true
+      - http:
+          method: ANY
+          path: '{proxy+}'
+          cors: true
+
+plugins:
+  - serverless-offline
