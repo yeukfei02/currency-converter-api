@@ -2,9 +2,9 @@
 
 currency-converter-api
 
-documentation: <>
+documentation: <https://documenter.getpostman.com/view/3827865/2s83S2BtHh>
 
-api url: <>
+api url: <https://v62zrs2r4e.execute-api.ap-southeast-1.amazonaws.com/prod>
 
 ## Requirement
 

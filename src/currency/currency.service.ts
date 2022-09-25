@@ -213,7 +213,7 @@ export class CurrencyService {
     return currencyRates;
   }
 
-  async getCurrencyConvert(from: string, to: string, amountInt: number) {
+  async getCurrencyConvert(from: string, to: string, amountNumber: number) {
     let currencyConvert = {};
 
     const response = await axios.get(
@@ -222,7 +222,7 @@ export class CurrencyService {
         params: {
           from: from,
           to: to,
-          amount: amountInt,
+          amount: amountNumber,
         },
         headers: {
           apikey: process.env.API_KEY,
