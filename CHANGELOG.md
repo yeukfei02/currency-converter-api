@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.2](https://github.com/yeukfei02/currency-converter-api/compare/v0.1.1...v0.1.2) (2022-09-26)
+
+
+### Bug Fixes
+
+* 🐛 remove .env ([86a9023](https://github.com/yeukfei02/currency-converter-api/commit/86a9023b3200a7f3fd695d8bb01cd44afe90c60b))
+
 ### 0.1.1 (2022-09-25)
 
 
