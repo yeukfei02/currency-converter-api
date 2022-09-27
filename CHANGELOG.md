@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.3](https://github.com/yeukfei02/currency-converter-api/compare/v0.1.2...v0.1.3) (2022-09-27)
+
+
+### Features
+
+* 🎸 enable cors ([478f3db](https://github.com/yeukfei02/currency-converter-api/commit/478f3dbac59f4333a1761830d9f2403a7b85b330))
+
 ### [0.1.2](https://github.com/yeukfei02/currency-converter-api/compare/v0.1.1...v0.1.2) (2022-09-26)
 
 
