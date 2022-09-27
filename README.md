@@ -9,7 +9,7 @@ api url: <https://v62zrs2r4e.execute-api.ap-southeast-1.amazonaws.com/prod>
 ## Requirement
 
 - install yarn
-- install node (v14+)
+- install node (v16+)
 - install serverless
 
 ## Testing and run
